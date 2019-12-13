@@ -1,1 +1,32 @@
 // Mixins Here
+
+
+.custom-button(@bg-colour:black, @width: 120px, @font-colour: white){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: @bg-colour;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: @width;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color:@font-colour; 
+
+    &:hover{
+        background-color:@font-colour;
+        color:@bg-colour;
+      }
+}
+
+
+
+.navmixins {
+    display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 40%;
+        margin: auto;
+        height: 150px;
+}
